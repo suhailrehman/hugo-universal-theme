@@ -3555,3 +3555,19 @@ a.list-group-item.active > .badge,
   left: 15px;
   right: 15px;
 }
+
+.rounded-circle {
+  border-radius: 50%;
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rounded-circle-sm {
+  border-radius: 50%;
+  max-width: 175px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

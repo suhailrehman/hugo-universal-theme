@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    <div id="all">
+
+        <header>
+
+          {{ partial "nav.html" . }}
+
+        </header>
+
+        {{ partial "breadcrumbs.html" . }}
+
+
+        <div id="content">
+          <div class="container">
+
+          <div class="row">
+            <div class="col-md-12">
+
+                  <ul>
+                    {{ range .Site.Data.publications }}
+                    <li>{{ .authors }}, <strong>{{ .title }}</strong>, <em>{{ .publication}}</em> <a href="#">[PDF]</a> </li>
+                    {{ end }}
+                  </ul>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+
+        <!-- /#content -->
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>
