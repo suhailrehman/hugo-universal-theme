@@ -1439,6 +1439,7 @@ fieldset[disabled] .btn-template-primary.active {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  font-size: 40px;
 }
 .box-simple h3 {
   font-weight: normal;
